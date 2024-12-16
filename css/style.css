@@ -1,0 +1,59 @@
+body{
+  background-color: #24353f;
+  font-family: sans-serif;
+}
+.login{
+  width: 65%;
+  background-color: #24353f;
+  box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+.login h1 , #uName{
+  color: #17a2b8;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
+#emailInput , #passwordInput , #nameInput{
+  background-color: #24353f;
+  color: #B6B6B6;
+}
+#emailInput::placeholder , #passwordInput::placeholder , #nameInput::placeholder{
+  color: #B6B6B6;
+}
+#loginButton , #signUpButton{
+  color: #17a2b8;
+}
+#loginButton:hover , #signUpButton:hover{
+  background-color: #17a2b8;
+  color: #fff;
+}
+.login p{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 16px;
+}
+.login p a{
+text-decoration: none;
+color: #fff;
+line-height: 1.5;
+transition: all 1s;
+}
+.login p a:hover{
+  text-decoration: underline;
+}
+
+.form-control:focus{
+  box-shadow: none;
+}
+
+nav{
+  box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+.welcome{
+  margin: 146px 138px;
+  width: 75%;
+  background-color: #24353f;
+  box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px; 
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="login mx-auto p-5 mt-5 text-center">
+      <h1>Smart Login System</h1>
+      <input
+        id="nameInput"
+        type="text"
+        class="form-control my-3 text-white d-none"
+        placeholder="Enter your name"
+      />
+      <input
+        id="emailInput"
+        type="email"
+        class="form-control my-3 text-white"
+        placeholder="Enter your email"
+      />
+      <input
+        id="passwordInput"
+        type="password"
+        class="form-control my-3"
+        placeholder="Enter your password"
+      />
+      <p id="warning" class="text-danger d-none">All inputs is required</p>
+      <p id="emailWarning" class="text-danger d-none">
+        Please enter a valid email address!
+      </p>
+      <p id="success" class="text-success d-none">Success</p>
+      <p id="emailExist" class="text-danger d-none">This email is already exist. Please sign in.</p>
+      <p id="error" class="text-danger d-none">Invalid email or password!</p>
+      <button
+        id="signUpButton"
+        type="button"
+        class="btn btn-outline-info my-3 w-100 d-none"
+      >
+        Sign Up
+      </button>
+      <button
+        id="loginButton"
+        type="button"
+        class="btn btn-outline-info my-3 w-100"
+      >
+        Login
+      </button>
+      <p id="noAccount" class="text-white">
+        Don’t have an account? <a id="signUpLink" href="">Sign Up</a>
+      </p>
+      <p id="Account" class="text-white d-none">
+        You have an account? <a id="loginLink" href="">Sign In</a>
+      </p>
+    </div> 
+
+    <div class="d-none" id="home" >
+      <nav class="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+          <a class="navbar-brand text-white text-uppercase" href="#">SMART LOGIN
+          </a>
+          <button id="logout" class="btn btn-outline-warning text-secondary" type="button">
+            LogOut
+          </button>
+        </div>
+      </nav>
+       <div class="welcome mx-auto  p-5 text-center">
+        <p id="uName"></p>
+       </div>
+    
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
